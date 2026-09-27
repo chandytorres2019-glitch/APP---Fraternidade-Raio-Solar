@@ -1,0 +1,6 @@
+{
+  "name": "Fraternidade Raio Solar - Martha Vieira",
+  "description": "Aplicativo oficial dos Buscadores da Luz: Jornada de 21 Dias com Arcanjo Miguel, Orações Diárias e Fraternidade Branca com Martha Vieira.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

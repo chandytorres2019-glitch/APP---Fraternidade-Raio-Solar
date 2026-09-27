@@ -1,0 +1,160 @@
+@import "tailwindcss";
+
+/* Sacred Flame & Mandala Animations */
+@keyframes flameSway {
+  0%, 100% {
+    transform: rotate(-2.5deg) scaleY(1);
+  }
+  50% {
+    transform: rotate(2.5deg) scaleY(1.08);
+  }
+}
+
+@keyframes flameCorePulse {
+  0%, 100% {
+    transform: scale(0.96);
+    opacity: 0.88;
+  }
+  50% {
+    transform: scale(1.04);
+    opacity: 1;
+  }
+}
+
+@keyframes sacredAuraRotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes flameSparkle {
+  0%, 100% {
+    opacity: 0.3;
+    transform: translateY(0px) scale(0.8);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(-4px) scale(1.2);
+  }
+}
+
+.animate-flame-sway {
+  animation: flameSway 2.4s ease-in-out infinite;
+  transform-origin: bottom center;
+}
+
+.animate-flame-core {
+  animation: flameCorePulse 1.6s ease-in-out infinite;
+}
+
+.animate-sacred-aura {
+  animation: sacredAuraRotate 14s linear infinite;
+}
+
+.animate-sacred-aura-reverse {
+  animation: sacredAuraRotate 20s linear infinite reverse;
+}
+
+.animate-flame-sparkle {
+  animation: flameSparkle 1.8s ease-in-out infinite;
+}
+
+/* Light Mode Theme Overrides */
+
+.theme-light {
+  --bg-primary: #f8fafc;
+  --bg-card: #ffffff;
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --border-subtle: #e2e8f0;
+}
+
+.theme-light {
+  background-color: #f8fafc;
+  color: #0f172a;
+}
+
+.theme-light .bg-slate-950 {
+  background-color: #f8fafc !important;
+  color: #0f172a !important;
+}
+
+.theme-light .bg-slate-900,
+.theme-light .bg-slate-900\/80,
+.theme-light .bg-slate-900\/90,
+.theme-light .bg-slate-900\/60,
+.theme-light .bg-slate-900\/50,
+.theme-light .bg-slate-950\/70,
+.theme-light .bg-slate-950\/80,
+.theme-light .bg-slate-950\/90,
+.theme-light .bg-slate-950\/98 {
+  background-color: #ffffff !important;
+  color: #1e293b !important;
+}
+
+.theme-light .text-slate-100,
+.theme-light .text-white {
+  color: #0f172a !important;
+}
+
+.theme-light .text-slate-200,
+.theme-light .text-slate-300 {
+  color: #1e293b !important;
+}
+
+.theme-light .text-slate-400 {
+  color: #475569 !important;
+}
+
+.theme-light .border-slate-800,
+.theme-light .border-slate-800\/60,
+.theme-light .border-purple-900\/40,
+.theme-light .border-purple-900\/30,
+.theme-light .border-blue-900\/30,
+.theme-light .border-blue-900\/40,
+.theme-light .border-blue-500\/30 {
+  border-color: #e2e8f0 !important;
+}
+
+.theme-light .from-slate-900 {
+  --tw-gradient-from: #ffffff !important;
+}
+
+.theme-light .to-slate-950 {
+  --tw-gradient-to: #f1f5f9 !important;
+}
+
+.theme-light .shadow-xl,
+.theme-light .shadow-2xl {
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.07), 0 8px 10px -6px rgba(0, 0, 0, 0.04) !important;
+}
+
+.theme-light .text-amber-300,
+.theme-light .text-amber-400 {
+  color: #b45309 !important;
+}
+
+.theme-light .text-blue-300,
+.theme-light .text-blue-400 {
+  color: #1d4ed8 !important;
+}
+
+.theme-light .text-purple-300,
+.theme-light .text-purple-400 {
+  color: #7e22ce !important;
+}
+
+.theme-light .bg-slate-800\/40,
+.theme-light .bg-slate-800\/60,
+.theme-light .bg-slate-800 {
+  background-color: #f1f5f9 !important;
+  color: #0f172a !important;
+}
+
+.theme-light nav.sticky {
+  background-color: rgba(255, 255, 255, 0.94) !important;
+  border-bottom-color: #e2e8f0 !important;
+}
